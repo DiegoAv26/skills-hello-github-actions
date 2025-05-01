@@ -1,0 +1,10 @@
+name: Blue is the color, football is the game
+
+on: [push]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sing song
+        run: echo "Blue is the color, football is the game!"
