@@ -1,6 +1,8 @@
 name: Blue is the color, football is the game
 
-on: [push]
+on:
+  push:
+  workflow_dispatch:
 
 jobs:
   fav-football-team:
