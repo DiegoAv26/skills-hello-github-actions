@@ -3,11 +3,17 @@ name: Blue is the color, football is the game
 on: [push]
 
 jobs:
-  say-hello:
+  fav-football-team:
     runs-on: ubuntu-latest
+    env:
+      TEAM: Chelsea
+
     steps:
-      - name: Check the code out
+      - name: Check out the code
         uses: actions/checkout@v3
-        
+
       - name: display the current working directory
         run: pwd
+
+      - name: show team environment variable
+        run: echo "The best team is $TEAM"
